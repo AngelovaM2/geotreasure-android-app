@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary"
+    android:padding="25dp"
+    tools:context=".Player.Puzzle_Math">
+
+    <TextView
+        android:id="@+id/math"
+        style="@style/title_white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="@string/solve_math_quiz" />
+
+
+    <TextView
+        android:id="@+id/math_question"
+        style="@style/text_field1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/math_choices_layout"
+        android:layout_margin="20dp"
+        android:text="@string/question_here"
+        android:textAlignment="center"
+        android:textColor="@color/white" />
+
+
+    <LinearLayout
+        android:id="@+id/math_choices_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/ans_A"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:backgroundTint="@color/white"
+            android:text="@string/ans_a"
+            android:textAllCaps="false"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/ans_B"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:backgroundTint="@color/white"
+            android:text="@string/ans_b"
+            android:textAllCaps="false"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/ans_C"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:backgroundTint="@color/white"
+            android:text="@string/ans_c"
+            android:textAllCaps="false"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/ans_D"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:backgroundTint="@color/white"
+            android:text="@string/ans_d"
+            android:textAllCaps="false"
+            android:textColor="@color/black" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/submit_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/math_choices_layout"
+        android:layout_marginTop="60dp"
+        android:backgroundTint="@color/pastel_purple"
+        android:text="@string/submit"
+        android:textAllCaps="false" />
+
+    <TextView
+        android:id="@+id/incorrect"
+        style="@style/text_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/math_choices_layout"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="-263dp"
+        android:textAlignment="center"
+        android:textColor="@color/complementary_primary"
+        android:textStyle="bold" />
+</RelativeLayout>

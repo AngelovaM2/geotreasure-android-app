@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">GeoTreasure</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_cache_history">History</string>
+    <string name="menu_leaderboard">Leaderboard</string>
+    <string name="menu_nearest_caches">Nearest</string>
+    <string name="menu_profile">Profile</string>
+    <string name="title_activity_drawer">DrawerActivity</string>
+
+    <string name="register">Register</string>
+    <string name="already_registered_login_here">already registered? Log in here</string>
+    <string name="repeat_a_password">Repeat a password</string>
+    <!-- to toggle the open close button of the navigation drawer -->
+    <string name="nav_open">Open</string>
+    <string name="nav_close">Close</string>
+    <string name="Forgot_password_description">Enter the email associated with your account and we\'ll send an email with instructions to reset your password</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="password_recovery">Password recovery</string>
+    <string name="go_back">Go back</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="username">Username</string>
+    <string name="confirm_password">Confirm password</string>
+    <string name="login">Login</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="logo">Logo</string>
+    <string name="welcome">Welcome</string>
+    <string name="create_an_account_or_login_to_continue">Create an account or login to continue</string>
+    <string name="remember_me">Remember me</string>
+    <string name="google_login">Google login</string>
+    <string name="solve_the_math_quiz">Solve the math quiz</string>
+    <string name="question_here">Question here</string>
+    <string name="ans_a">Ans A</string>
+    <string name="ans_b">Ans B</string>
+    <string name="ans_c">Ans C</string>
+    <string name="ans_d">Ans D</string>
+    <string name="submit">Submit</string>
+    <string name="solve_math_quiz">Solve the Math Quiz</string>
+    <string name="solve_trivia_quiz">Solve the Trivia Quiz</string>
+    <string name="leaderboard">Leaderboard</string>
+    <string name="name">Name</string>
+    <string name="points">points</string>
+</resources>

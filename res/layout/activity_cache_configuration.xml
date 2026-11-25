@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Placer.Cache_Configuration">
+
+        <ImageButton
+            android:id="@+id/goBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:backgroundTint="#00164345"
+            android:contentDescription="@string/go_back"
+            android:minHeight="48dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="?attr/actionModeCloseDrawable"
+            app:tint="#000000" />
+
+        <ImageView
+            android:id="@+id/pic_icon"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:layout_marginTop="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView5"
+            app:srcCompat="@drawable/pic_icon"
+            tools:ignore="ImageContrastCheck" />
+
+        <EditText
+            android:id="@+id/cache_name"
+            style="@style/text_field"
+            android:layout_width="350dp"
+            android:layout_height="49dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="40dp"
+            android:background="@drawable/rounded"
+            android:fontFamily="@font/poppins_regular"
+            android:hint="Name"
+            android:minHeight="48dp"
+            android:paddingStart="10dp"
+            android:paddingTop="3dp"
+            android:paddingEnd="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.504"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pic_icon" />
+
+        <TextView
+            android:id="@+id/textView5"
+            style="@style/title_small"
+            android:layout_width="262dp"
+            android:layout_height="34dp"
+            android:layout_marginTop="63dp"
+            android:text="Register a new cache"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/kur_loc"
+            style="@style/text_field1"
+            android:layout_width="200dp"
+            android:layout_height="29dp"
+            android:layout_marginTop="24dp"
+            android:elevation="16dp"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="17dp"
+            app:layout_constraintEnd_toEndOf="@+id/puzzle_type"
+            app:layout_constraintTop_toBottomOf="@id/puzzle_type" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/locationbtn"
+            style="@style/button_lightBlue"
+            android:layout_width="350dp"
+            android:layout_height="49dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/primary_button"
+            android:minHeight="48dp"
+            android:paddingStart="10dp"
+            android:paddingTop="3dp"
+            android:paddingEnd="10dp"
+            android:text="Location:"
+            app:layout_constraintBottom_toTopOf="@+id/cache_points"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.504"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/puzzle_type" />
+
+        <EditText
+            android:id="@+id/cache_points"
+            style="@style/text_field"
+            android:layout_width="350dp"
+            android:layout_height="49dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/rounded"
+            android:hint="Points"
+            android:minHeight="48dp"
+            android:paddingStart="10dp"
+            android:paddingTop="3dp"
+            android:paddingEnd="10dp"
+            app:layout_constraintEnd_toEndOf="@+id/locationbtn"
+            app:layout_constraintStart_toStartOf="@+id/locationbtn"
+            app:layout_constraintTop_toBottomOf="@id/locationbtn"
+            tools:layout_editor_absoluteY="405dp" />
+
+        <TextView
+            android:id="@+id/puzzle_view"
+            style="@style/text_field"
+            android:layout_width="330dp"
+            android:layout_height="34dp"
+            android:layout_marginTop="29dp"
+
+            android:elevation="100dp"
+            android:text="Puzzle type"
+            android:textColor="#6E6E6E"
+            app:layout_constraintEnd_toEndOf="@+id/cache_name"
+            app:layout_constraintStart_toStartOf="@+id/cache_name"
+            app:layout_constraintTop_toBottomOf="@+id/cache_name" />
+
+        <EditText
+            android:id="@+id/cache_description"
+            style="@style/text_field"
+            android:layout_width="350dp"
+            android:layout_height="138dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/rounded"
+            android:hint="Description"
+            android:minHeight="48dp"
+            android:paddingStart="10dp"
+            android:paddingTop="3dp"
+            android:paddingEnd="10dp"
+            app:layout_constraintEnd_toEndOf="@+id/cache_points"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="@+id/cache_points"
+            app:layout_constraintTop_toBottomOf="@+id/cache_points" />
+
+        <Spinner
+            android:id="@+id/puzzle_type"
+            android:layout_width="355dp"
+            android:layout_height="56dp"
+            android:layout_marginTop="15dp"
+            android:background="@android:drawable/btn_dropdown"
+            android:spinnerMode="dropdown"
+            app:layout_constraintBottom_toTopOf="@+id/locationbtn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cache_name" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/postbtn"
+            style="@style/button_lightBlue"
+            android:layout_width="350dp"
+            android:layout_height="49dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/primary_button"
+            android:text="Register and generate QR"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cache_description"
+            app:layout_constraintVertical_bias="0.031" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
