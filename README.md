@@ -29,10 +29,6 @@ GeoTreasure turns a walk into a treasure hunt. Players see caches on a map, walk
 <img src="images/geotreasure-sidepage.webp" width="49%" alt="Side menu">
 </p>
 
-## What I learned
-
-I was hoping for more programming and less paperwork in this course, and a lot of our time went into documents. On the bright side, it was the project where I really got into user interface design and its implementation in Android Studio, and I am glad I had the chance to explore it in detail. If I did it again, I would split the documents into smaller tasks with deadlines early on, so there is more time left for the app itself.
-
 ---
 
 Made by **Mariana Angelova** as part of a team of four · [Portfolio](https://AngelovaM2.github.io)
